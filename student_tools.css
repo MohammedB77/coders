@@ -1,0 +1,371 @@
+/* (Body & Typography) */
+
+body {
+    font-family: 'Tajwal', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    direction: rtl;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 70px; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.student-tools-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.top-bar {
+    background-color: #1a237e; 
+    color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top-bar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; 
+    margin: 0;
+    padding: 0 5%;
+}
+
+.top-bar nav ul li {
+    margin: 0 15px;
+}
+
+.top-bar nav ul li a {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.top-bar nav ul li a:hover,
+.top-bar nav ul li .active-link {
+    color: #FFC107; 
+}
+.university-email-header {
+    text-align: center;
+    padding: 50px 10%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.university-email-header h2 {
+    font-size: 32px;
+    font-weight: 800; 
+    color: #1a237e;
+    margin-top: 0;
+}
+
+.university-email-header p {
+    font-size: 17px;
+    max-width: 800px;
+    margin: 20px auto 0;
+    line-height: 1.8;
+    color: #555;
+}
+
+.highlight-text {
+    font-weight: 700;
+    color: #FF9800;
+}
+
+.tools-image-section {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+.main-tools-image {
+    max-width: 70%; 
+    max-height: 500px; 
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
+.extra-subscriptions-section {
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800; 
+    color: #1a237e;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #FFC107;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.subscriptions-list-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.subscription-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-right: 5px solid #1a237e;
+}
+
+.subscription-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sub-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+
+.text-content {
+    text-align: right;
+    flex-grow: 1;
+}
+
+.text-content h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a237e;
+    margin: 0 0 5px 0;
+}
+
+.text-content p {
+    font-size: 15px;
+    color: #555;
+    margin: 0;
+}
+
+
+.site-footer {
+    background-color: #1a237e;
+    color: #ffffff;
+    padding: 50px 5% 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: right;
+}
+
+.footer-blur-light {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    filter: blur(50px);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    gap: 50px;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-box h2 {
+    font-size: 22px;
+    font-weight: 800; 
+    margin-bottom: 20px;
+    color: #FFC107;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.contact-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-item i {
+    font-size: 20px;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.email-input {
+    cursor: default;
+}
+
+.email-input input {
+    background: none;
+    border: none;
+    color: #ffffff;
+    width: 100%;
+    text-align: right;
+}
+.email-input i {
+    color: #FFC107;
+}
+
+.bot-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.telegram-icon {
+    font-size: 60px;
+    color: #0088cc;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.telegram-icon:hover {
+    transform: scale(1.1);
+}
+
+.bot-description {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.bot-username {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 15px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+@media (max-width: 900px) {
+    
+    /* --- الفوتر --- */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .footer-box {
+        min-width: 100%;
+    }
+    .contact-links {
+        align-items: center;
+    }
+    .email-input input {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .university-email-header {
+        padding: 30px 5%;
+    }
+    
+    .university-email-header h2 {
+        font-size: 28px;
+    }
+
+    .main-tools-image {
+        max-width: 95%; 
+        max-height: 400px;
+    }
+    
+    .subscription-card {
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        padding: 15px;
+        border-right: none;
+        border-top: 5px solid #1a237e;
+    }
+    
+    .sub-logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    .text-content h2 {
+        font-size: 18px;
+    }
+    .text-content p {
+        font-size: 14px;
+    }
+}
+img[src*="Group 24.png"] {
+  width: 150px; 
+  height: auto;
+  display: block;
+  margin: 20px auto; 
+}
