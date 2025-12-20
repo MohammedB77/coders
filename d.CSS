@@ -1,5 +1,5 @@
 * { /* normalize */
-    margin: 0; /* عشان الزوايا  */
+    margin: 0; /* عشان الزوايا*/
     box-sizing: border-box;
     font-family: 'Tajwal', sans-serif;
 }
@@ -1092,4 +1092,5 @@ img[src*="Group 24.png"] {
 
 .message-button i {
     margin-right: 8px; 
+
 }
