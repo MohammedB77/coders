@@ -1094,3 +1094,259 @@ img[src*="Group 24.png"] {
     margin-right: 8px; 
 
 }
+/* ===== السيكشن البنفسجي ===== */
+.awl8sm {
+    background: #5b2aa6;
+    padding: 140px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.purple-section {
+    background-color: #4B2C91; /* لون بنفسجي غامق */
+    height: 100vh;
+    padding: 90px 20px;
+    text-align: center;
+    color: white;
+}
+
+     :root { --main-purple: #4B2C91; --bg-footer: #3d2c67; --card-bg: #ffffff; }
+        body { font-family: 'Tajwal', sans-serif; margin: 0; background-color: #fcfcfc; color: #333; }
+        
+        .subjects-section { padding: 60px 8%; }
+        
+        .grid-container { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 25px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+
+        /* تنسيق عناوين المراحل */
+        .phase-title {
+            grid-column: span 2; /* تأخذ الصف كاملاً */
+            color: var(--main-purple);
+            border-bottom: 2px solid var(--main-purple);
+            padding-bottom: 10px;
+            margin: 40px 0 20px;
+            font-size: 1.8rem;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .phase-title:first-child { margin-top: 0; }
+
+        .subject-card {
+            background: var(--card-bg);
+            border: 1px solid #eee;
+            border-radius: 20px;
+            padding: 25px;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+        .subject-card:hover { transform: translateY(-5px); border-color: var(--main-purple); box-shadow: 0 12px 20px rgba(75, 44, 145, 0.1); }
+        
+        .card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
+        .card-header i { font-size: 24px; color: var(--main-purple); min-width: 30px; text-align: center; }
+        .card-header h3 { margin: 0; font-size: 1.3rem; font-weight: 700; color: #1a1a1a; }
+        
+        .subject-card p { font-size: 0.95rem; line-height: 1.7; color: #555; margin-bottom: 20px; flex-grow: 1; }
+        
+        .importance-box {
+            background: #f8f6ff;
+            padding: 15px;
+            border-radius: 12px;
+            border-right: 4px solid var(--main-purple);
+            font-size: 0.9rem;
+        }
+        .importance-box b { color: var(--main-purple); display: block; margin-bottom: 5px; }
+
+        /* Footer */
+        .site-footer { background-color: var(--bg-footer); color: #fff; padding: 50px 0 20px; text-align: center; position: relative; }
+        .footer-container { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-bottom: 30px; }
+        .footer-box { background: #5b4a8c; border-radius: 20px; padding: 25px; width: 280px; }
+        .contact-item { background: #7b6ba8; border-radius: 10px; padding: 10px; color: #fff; text-decoration: none; display: block; margin-top: 10px; font-weight: 700; transition: 0.3s; }
+        .contact-item:hover { background: #bfbfbf; color: #333; }
+        .telegram-icon { background: #0088cc; width: 60px; height: 60px; line-height: 60px; border-radius: 50%; display: inline-block; font-size: 30px; margin-bottom: 10px; }
+        .copyright { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; font-size: 0.9rem; color: #ccc; }
+
+        @media (max-width: 900px) { 
+            .grid-container { grid-template-columns: 1fr; } 
+            .phase-title { grid-column: span 1; font-size: 1.5rem; }
+        }
+
+* {
+  box-sizing: border-box;
+  font-family: "Tajwal", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at center, #6d3fb3 0%, #4a1f7a 70%);
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* ===== السيكشن البنفسجي ===== */
+.awl8sm {
+  min-height: 100vh;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diagram {
+  position: relative;
+  width: 1300px;
+  max-width: 96%;
+  height: 760px;
+}
+
+/* خطوط جانبية */
+.diagram::before,
+.diagram::after {
+  content: "";
+  position: absolute;
+  top: 90px;
+  bottom: 90px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255,255,255,0.25),
+    transparent
+  );
+}
+
+.diagram::before { left: 260px; }
+.diagram::after  { right: 260px; }
+
+/* النقاط */
+.dot {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255,255,255,0.9);
+  opacity: 0.75;
+}
+
+.dot.l1 { top: 190px; left: 255px; }
+.dot.l2 { top: 360px; left: 255px; }
+.dot.l3 { top: 530px; left: 255px; }
+
+.dot.r1 { top: 190px; right: 255px; }
+.dot.r2 { top: 360px; right: 255px; }
+.dot.r3 { top: 530px; right: 255px; }
+
+/* الطالب */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.student {
+  width: 300px;
+  height: 300px;
+  filter:
+    drop-shadow(0 0 25px rgba(255,255,255,0.25))
+    drop-shadow(0 25px 45px rgba(0,0,0,0.45));
+}
+
+/* المربعات */
+.pos {
+  position: absolute;
+  z-index: 2;
+  transition: 0.35s ease;
+}
+
+.pos:hover {
+  transform: translateY(-8px) scale(1.03);
+  filter: drop-shadow(0 22px 40px rgba(0,0,0,0.45));
+}
+
+.box {
+  width: 240px;
+  border-radius: 20px;
+}
+
+/* التوزيع */
+.top { top: 0; left: 50%; transform: translateX(-50%); }
+.bottom { bottom: 0; left: 50%; transform: translateX(-50%); }
+
+.left.l1 { top: 170px; left: 0; }
+.left.l2 { top: 350px; left: 0; }
+.left.l3 { top: 530px; left: 0; }
+
+.right.r1 { top: 170px; right: 0; }
+.right.r2 { top: 350px; right: 0; }
+.right.r3 { top: 530px; right: 0; }
+
+/* ===== كروت المواد ===== */
+.subjects-section {
+  background: #fff;
+  padding: 60px 8%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.phase-title {
+  grid-column: span 2;
+  color: var(--main-purple);
+  border-bottom: 2px solid var(--main-purple);
+  padding-bottom: 10px;
+  margin: 40px 0 20px;
+  font-size: 1.8rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.subject-card {
+  background: var(--card-bg);
+  border: 1px solid #eee;
+  border-radius: 20px;
+  padding: 25px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.subject-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--main-purple);
+}
+
+.importance-box {
+  background: #f8f6ff;
+  padding: 15px;
+  border-radius: 12px;
+  border-right: 4px solid var(--main-purple);
+  font-size: 0.9rem;
+}
+
+/* ريسبونسف */
+@media (max-width: 900px) {
+  .grid-container { grid-template-columns: 1fr; }
+  .phase-title { grid-column: span 1; font-size: 1.5rem; }
+  .diagram::before,
+  .diagram::after,
+  .dot { display: none; }
+}
