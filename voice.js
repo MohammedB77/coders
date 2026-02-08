@@ -1,53 +1,29 @@
-class VoiceManager {
-  constructor() {
-    this.synth = window.speechSynthesis;
-    this.settings = this.loadSettings();
-  }
+function speak(text) {
+  if (!text) return;
 
-  speak(text) {
-    if (!text) return;
+  // يوقف أي صوت شغال حاليًا
+  speechSynthesis.cancel();
 
-    // يوقف أي صوت شغال
-    this.synth.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'ar-SA';
+  u.rate = 1.2;
 
-    const ut = new SpeechSynthesisUtterance(text);
-
-    // اللغة
-    ut.lang = 'ar-SA';
-    ut.pitch = 1;
-
-
-    // السرعة من الإعدادات
-    ut.rate = this.settings.voiceSpeed || 1;
-
-    // اختيار أفضل صوت عربي
-    const voices = this.synth.getVoices();
-    const arabicVoice =
-      voices.find(v => v.lang === 'ar-SA') ||
-      voices.find(v => v.lang.startsWith('ar'));
-
-    if (arabicVoice) ut.voice = arabicVoice;
-
-    this.synth.speak(ut);
-  }
-  
-
-  loadSettings() {
-    const s = localStorage.getItem('voice-settings');
-    return s ? JSON.parse(s) : { voiceSpeed: 1 };
-  }
-
-  saveSettings(speed) {
-    this.settings.voiceSpeed = speed;
-    localStorage.setItem('voice-settings', JSON.stringify(this.settings));
-  }
+  speechSynthesis.speak(u);
 }
-console.log(speechSynthesis.getVoices());
-
-// إنشاء كائن واحد للصوت
-const voice = new VoiceManager();
 document.getElementById('intro-text').onclick = () =>
-  voice.speak('ابدأ مشوارك الجامعي في علوم الحاسب بسهولة');
+  speak('ابدأ مشوارك الجامعي في علوم الحاسب بسهولة');
 
 document.getElementById('about-cs').onclick = () =>
-  voice.speak('عن التخصص');
+  speak('عن التخصص');
+
+document.getElementById('what-is-cs').onclick = () =>
+  speak('ما هو تخصص علوم الحاسب؟ علوم الحاسب هو العلم الذي يدرس العمليات المرتبطة بالبيانات...');
+
+document.getElementById('cs-future').onclick = () =>
+  speak('مستقبل التخصص نمو المجال يواكب احتياجات السوق عالميًا');
+
+document.getElementById('cs-impact').onclick = () =>
+  speak('أثر التخصص يساهم في تحسين التعليم والصحة والأعمال');
+
+document.getElementById('cs-skills').onclick = () =>
+  speak('صفات أخصائي علوم الحاسوب');
