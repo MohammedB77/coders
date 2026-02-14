@@ -4,205 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الشهادات المهنية</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tajwal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
     <link rel="stylesheet" href="d.CSS"> 
-    <style>
-        /* تنسيقات أساسية للخط والخلفية */
-        body {
-            font-family: 'Tajwal', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding-top: 70px; /* لتجنب اختفاء المحتوى خلف النافبار الثابت */
-        }
-    </style>
+      <link rel="icon" sizes="32x32" href="LandingBage\codersslogo.png">
+    <link rel="icon" sizes="192x192" href="LandingBage\codersslogo.png">
+    
 </head>
-<body>
+<body class="certificates-page">
 
     <header class="top-bar">
-   
         <nav>
             <ul>
                 <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="study-plan.html">الخطة الدراسية</a></li>
+                <li><a href="StudyPlan.html">الخطة الدراسية</a></li>
                 <li><a href="StudentResources.html">أدوات الطالب</a></li>
-                <li><a href="certificates.html" class="active-link">الشهادات المهنية</a></li>
+              <li><a href="certificates.html" class="active-link">الشهادات المهنية</a></li>
+
             </ul>
         </nav>
     </header>
 
-    <div class="certificates-page-container">
+    <div class="page-container">
         
         <section class="certificates-header-section">
-            <h1 class="header-title">الشهادات المهنية</h1>
-            <p class="header-description">
-                استكشف الشهادات المهنية المعتمدة في علوم الحاسوب والتي تعزز خبراتك خطوة بخطوة.
+            <h1 class="header-title" id = "page-title"> الشهادات المهنية</h1>
+            <p class="header-description" id = "page-desc">
+استكشف الشهادات المهنية المعتمدة في علوم الحاسوب والتي تعزز خبراتك خطوة بخطوة.
+
             </p>
         </section>
 
         <section class="certs-category-section">
-            <h2 class="category-title"><i class="fas fa-database"></i> علم البيانات</h2>
+            <h2 class="category-title" id ="data-title"><i class="fas fa-database"></i> علم البيانات</h2>
             <div class="certs-grid">
-
                 <a href="https://www.coursera.org/professional-certificates/google-data-analytics" target="_blank" class="cert-card">
                     <div class="cert-logo-container">
                         <img src="LandingBage\Google Data Analytics.png" alt="Google Data Analytics" class="cert-logo">
                     </div>
-                    <h3 class="cert-name">Google Data Analytics</h3>
-                    <p class="cert-description">
-                        شهادة احترافية في تحليل البيانات 
-                    </p>
+                    <div class="cert-content-area">
+                        <h3 class="cert-name" id = "cert-google-desc">Google Data Analytics</h3>
+                        <p class="cert-description">شهادة احترافية في تحليل البيانات</p>
+                    </div>
                     <div class="cert-details">
                         <span class="detail-item"><i class="fas fa-clock"></i> المدة: ٤-٦ أشهر</span>
                         <span class="detail-item"><i class="fas fa-star"></i> مبتدئ</span>
-                        <span class="detail-item"><i class="fas fa-graduation-cap"></i> Coursera</span>
+                        <span class="detail-item"><i class="fas fa-graduation-cap"></i> مقدمه من كورسيرا</span>
+                        <button class="details-button">تفاصيل الشهادة <i class="fas fa-external-link-alt"></i></button>
                     </div>
-                    <button class="details-button">تفاصيل الشهادة <i class="fas fa-external-link-alt"></i></button>
                 </a>
-
                 <a href="https://www.coursera.org/professional-certificates/ibm-data-science?msockid=278193fc974f6b8d37d8857496d36a37" target="_blank" class="cert-card">
                     <div class="cert-logo-container">
                         <img src="LandingBage\IBM.png" alt="IBM Data Science" class="cert-logo">
                     </div>
-                    <h3 class="cert-name">IBM Data Science</h3>
-                    <p class="cert-description">
-                        شهادة متخصصة في تحليل البيانات IBM.
-                    </p>
-                    <div class="cert-details">
-                        <span class="detail-item"><i class="fas fa-clock"></i>  المدة : ٨ - ٦ أشهر</span>
-                        <span class="detail-item"><i class="fas fa-star"></i> متوسط</span>
-                        <span class="detail-item"><i class="fas fa-graduation-cap"></i> Coursera</span>
+                    <div class="cert-content-area">
+                        <h3 class="cert-name">IBM Data Science</h3>
+                        <p class="cert-description">شهادة متخصصة في تحليل البيانات IBM.</p>
                     </div>
-                    <button class="details-button">تفاصيل الشهادة <i class="fas fa-external-link-alt"></i></button>
+                    <div class="cert-details">
+                        <span class="detail-item"><i class="fas fa-clock"></i> المدة : ٨ - ٦ أشهر</span>
+                        <span class="detail-item"><i class="fas fa-star"></i> متوسط</span>
+                        <span class="detail-item"><i class="fas fa-graduation-cap"></i> مقدمه من كورسيرا</span>
+                        <button class="details-button">تفاصيل الشهادة <i class="fas fa-external-link-alt"></i></button>
+                    </div>
                 </a>
-                
             </div>
         </section>
         
         <section class="certs-category-section">
-            <h2 class="category-title"><i class="fas fa-code"></i> تطوير الويب</h2>
+            <h2 class="category-title" id ="web-title"><i class="fas fa-code"></i> تطوير الويب</h2>
             <div class="certs-grid">
-                
-                <a href="https://www.coursera.org/professional-certificates/meta-front-end-developer" target="_blank" class="cert-card">
+                 <a href="https://www.coursera.org/professional-certificates/meta-front-end-developer" target="_blank" class="cert-card">
                     <div class="cert-logo-container">
                         <img src="LandingBage\Meta Frontend Developer.png" alt="Meta Frontend Developer" class="cert-logo">
                     </div>
-                    <h3 class="cert-name">Meta Frontend Developer</h3>
-                    <p class="cert-description">
-                        Meta شهادة تطوير واجهات الويب من 
-                    </p>
-                    <div class="cert-details">
-                        <span class="detail-item"><i class="fas fa-clock"></i>  المدة : ٧-٥ أشهر</span>
-                        <span class="detail-item"><i class="fas fa-star"></i> متوسط</span>
-                        <span class="detail-item"><i class="fas fa-graduation-cap"></i> Coursera</span>
+                    <div class="cert-content-area">
+                        <h3 class="cert-name">Meta Frontend Developer</h3>
+                        <p class="cert-description"> شهادة تطوير واجهات الويب من Meta</p>
                     </div>
-                    <button class="details-button">تفاصيل الشهادة <i class="fas fa-external-link-alt"></i></button>
+                    <div class="cert-details">
+                        <span class="detail-item"><i class="fas fa-clock"></i> المدة : ٧-٥ أشهر</span>
+                        <span class="detail-item"><i class="fas fa-star"></i> متوسط</span>
+                        <span class="detail-item"><i class="fas fa-graduation-cap"></i> مقدمه من كورسيرا</span>
+                        <button class="details-button">تفاصيل الشهادة <i class="fas fa-external-link-alt"></i></button>
+                    </div>
                 </a>
 
                 <a href="https://www.coursera.org/professional-certificates/meta-back-end-developer" target="_blank" class="cert-card">
-                    <div class="cert-logo-container">
-                        <img src="LandingBage\Meta Backend Develo.png" alt="Meta Backend Developer" class="cert-logo">
-                    </div>
-                    <h3 class="cert-name">Meta Backend Developer</h3>
-                    <p class="cert-description">
-                        شهادة متخصصة في تطوير الويب من جهة الخادم بلغة Python.
-                    </p>
+                    <div class="cert-logo-container"><img src="LandingBage\Meta Backend Develo.png" alt="Meta Backend Developer" class="cert-logo"></div>
+                    <div class="cert-content-area"><h3 class="cert-name">Meta Backend Developer</h3><p class="cert-description"> من شهادة متخصصة في تطوير الويب من جانب الخادم Meta</p></div>
                     <div class="cert-details">
-                        <span class="detail-item"><i class="fas fa-clock"></i>المدة : ٨-٦ أشهر</span>
-                        <span class="detail-item"><i class="fas fa-star"></i> متوسط</span>
-                        <span class="detail-item"><i class="fas fa-graduation-cap"></i> Coursera</span>
+                        <span class="detail-item"><i class="fas fa-clock"></i> المدة: ٨ أشهر</span>
+                        <span class="detail-item"><i class="fas fa-star"></i> متقدم</span>
+                        <span class="detail-item"><i class="fas fa-graduation-cap"></i>  مقدمه من كورسيرا </span>
+                        <button class="details-button">تفاصيل الشهادة <i class="fas fa-external-link-alt"></i></button>
                     </div>
-                    <button class="details-button">تفاصيل الشهادة <i class="fas fa-external-link-alt"></i></button>
                 </a>
-
             </div>
         </section>
-        
+
         <section class="certs-category-section">
-            <h2 class="category-title"><i class="fas fa-stream"></i> مجالات متنوعة</h2>
+            <h2 class="category-title" id = 'other-title'><i class="fas fa-stream"></i> مجالات متنوعة</h2>
             <div class="certs-grid">
-                
                 <a href="https://www.coursera.org/professional-certificates/google-ux-design" target="_blank" class="cert-card">
                     <div class="cert-logo-container">
                         <img src="LandingBage\GoogleUxDesgin.png" alt="Google UX Design" class="cert-logo">
                     </div>
-                    <h3 class="cert-name">Google UX Design Certificate</h3>
-                    <p class="cert-description">
-                        شهادة احترافية في تصميم تجربة المستخدم وتفاعل الواجهات.
-                    </p>
-                    <div class="cert-details">
-                        <span class="detail-item"><i class="fas fa-clock"></i>المدة: ٤-٦ أشهر</span>
-                        <span class="detail-item"><i class="fas fa-star"></i> مبتدئ</span>
-                        <span class="detail-item"><i class="fas fa-graduation-cap"></i> Coursera</span>
+                    <div class="cert-content-area">
+                        <h3 class="cert-name">Google UX Design Certificate</h3>
+                        <p class="cert-description">
+                            شهادة احترافية في تصميم تجربة المستخدم وتفاعل الواجهات.
+                        </p>
                     </div>
-                    <button class="details-button">تفاصيل الشهادة <i class="fas fa-external-link-alt"></i></button>
+                    <div class="cert-details">
+                        <span class="detail-item"><i class="fas fa-clock"></i> المدة: ٤-٦ أشهر</span>
+                        <span class="detail-item"><i class="fas fa-star"></i> مبتدئ</span>
+                        <span class="detail-item"><i class="fas fa-graduation-cap"></i> مقدمه من كورسيرا</span>
+                        <button class="details-button">تفاصيل الشهادة <i class="fas fa-external-link-alt"></i></button>
+                    </div>
                 </a>
 
                 <a href="https://www.isc2.org/Certifications/CISSP" target="_blank" class="cert-card">
                     <div class="cert-logo-container">
                         <img src="LandingBage\CISSP.png" alt="CISSP" class="cert-logo">
                     </div>
-                    <h3 class="cert-name">CISSP</h3>
-                    <p class="cert-description">
-                        شهادة متقدمة في أمن المعلومات للمحترفين.
-                    </p>
+                    <div class="cert-content-area">
+                        <h3 class="cert-name">CISSP</h3>
+                        <p class="cert-description">
+                            شهادة متقدمة في أمن المعلومات للمحترفين.
+                        </p>
+                    </div>
                     <div class="cert-details">
-                        <span class="detail-item"><i class="fas fa-clock"></i>المدة : ١٢-٦ أشهر</span>
+                        <span class="detail-item"><i class="fas fa-clock"></i> المدة : ١٢-٦ أشهر</span>
                         <span class="detail-item"><i class="fas fa-star"></i> خبير</span>
                         <span class="detail-item"><i class="fas fa-graduation-cap"></i> (ISC)²</span>
+                        <button class="details-button">تفاصيل الشهادة <i class="fas fa-external-link-alt"></i></button>
                     </div>
-                    <button class="details-button">تفاصيل الشهادة <i class="fas fa-external-link-alt"></i></button>
                 </a>
 
                 <a href="https://www.comptia.org/certifications/security" target="_blank" class="cert-card">
                     <div class="cert-logo-container">
                         <img src="LandingBage\Security+.png" alt="CompTIA Security+" class="cert-logo">
                     </div>
-                    <h3 class="cert-name">CompTIA Security+</h3>
-                    <p class="cert-description">
-                        شهادة البداية في الأمن السيبراني. تغطي أساسيات الشبكات والتهديدات.
-                    </p>
-                    <div class="cert-details">
-                        <span class="detail-item"><i class="fas fa-clock"></i>المدة: ٦-٣ أشهر</span>
-                        <span class="detail-item"><i class="fas fa-star"></i> مبتدئ</span>
-                        <span class="detail-item"><i class="fas fa-graduation-cap"></i> CompTIA</span>
+                    <div class="cert-content-area">
+                        <h3 class="cert-name">CompTIA Security+</h3>
+                        <p class="cert-description">
+                            شهادة البداية في الأمن السيبراني. تغطي أساسيات الشبكات والتهديدات.
+                        </p>
                     </div>
-                    <button class="details-button">تفاصيل الشهادة <i class="fas fa-external-link-alt"></i></button>
+                    <div class="cert-details">
+                        <span class="detail-item"><i class="fas fa-clock"></i> المدة: ٦-٣ أشهر</span>
+                        <span class="detail-item"><i class="fas fa-star"></i> مبتدئ</span>
+                        <span class="detail-item"><i class="fas fa-graduation-cap"></i> مقدمه من كومتيا</span>
+                        <button class="details-button">تفاصيل الشهادة <i class="fas fa-external-link-alt"></i></button>
+                    </div>
                 </a>
 
                 <a href="https://www.coursera.org/specializations/deep-learning" target="_blank" class="cert-card">
                     <div class="cert-logo-container">
                         <img src="LandingBage\DeeLearning.png" alt="Deep Learning" class="cert-logo">
                     </div>
-                    <h3 class="cert-name">Deep Learning Specialization</h3>
-                    <p class="cert-description">
-                        شهادة متخصصة في التعلم العميق، تركز على بناء وتدريب الشبكات العصبية وتطبيقاتها العملية                
-                    </p>
+                    <div class="cert-content-area">
+                        <h3 class="cert-name">Deep Learning Specialization</h3>
+                        <p class="cert-description">
+                            شهادة متخصصة في التعلم العميق، تركز على بناء وتدريب الشبكات العصبية وتطبيقاتها العملية
+                        </p>
+                    </div>
                     <div class="cert-details">
                         <span class="detail-item"><i class="fas fa-clock"></i> ٣ اشهر</span>
                         <span class="detail-item"><i class="fas fa-star"></i> متقدم</span>
-                        <span class="detail-item"><i class="fas fa-graduation-cap"></i> Coursera</span>
+                        <span class="detail-item"><i class="fas fa-graduation-cap"></i> مقدمه من كورسيرا</span>
+                        <button class="details-button">تفاصيل الشهادة <i class="fas fa-external-link-alt"></i></button>
                     </div>
-                    <button class="details-button">تفاصيل الشهادة <i class="fas fa-external-link-alt"></i></button>
                 </a>
-
             </div>
         </section>
-
-    </div> 
-
-    <section class="final-message-section">
-    <div class="message-card">
-        <h2 class="message-title">كلمة أخيرة ✨</h2>
-        <p class="message-text">
-            وفي الختام، إن لسَعيك رحلة قد تطول ولكنها تستحق كل خطوةٍ خطوتها. 
-            <br>
-            نتمنى لكم كل التوفيق والنجاح!
+<section class="final-message-section " >
+    <div class="message-card" id = "final-title">
+        <h3 class="message-title" >كلمة أخيرة ✨</h3>
+        <p class="message-text" id = "final-text">
+            وفي الختام، إن لسَعيك رحلة قد تطول ولكنها تستحق كل خطوةٍ خطوتها.<br>
+            نتمنى لكم كل التوفيق والنجاح! 
         </p>
-        <a href="H.HTML" class="message-button">العودة للصفحة الرئيسية <i class="fas fa-home"></i></a>
     </div>
 </section>
-    
+
+    </div> 
     <footer class="site-footer">
         <div class="footer-blur-light"></div>
         <div class="footer-container">
@@ -216,10 +204,7 @@
                         <i class="fab fa-instagram-square"></i>
                         <span>@coders__9</span>
                     </a>
-                    <a href="https://t.me/cCS9s_bot" target="_blank" class="contact-item social-link telegram-btn-alt">
-                        <i class="fab fa-telegram-plane"></i>
-                        <span>بوت الدفعة</span>
-                    </a>
+                
                 </div>
             </div>
             <div class="footer-box bot-box">
@@ -234,13 +219,27 @@
                     <span class="highlight">@cCS9s_bot</span>
                 </p>
             </div>
-   </div>
-        
-        <div class="copyright">
-            
-  <p>© 2025 <strong>Mohammed Bamhraz</strong> – <strong>تم إنشاؤه من قبل اللجنة العلمية </strong>. جميع الحقوق محفوظة.</p>
+        </div>
+     </div>
+           
+      <div class="copyright">
+    <div class="copyright-content">
+        <span class="copyright-symbol">©</span>
+        <span class="year">2025 CSHUB</span>
+        <span>تم الإنشاء بواسطة</span>
+        <span class="highlight-entity">اللجنة العلمية</span>
+
+
+        <span>جميع الحقوق محفوظة.</span>
+    </div>
 </div>
+<!-- زر الوصول -->
+<button class="a11y-toggle"
+        aria-pressed="false"
+        aria-label="تفعيل أو إيقاف وضع الاحتياجات الخاصة">
+  ♿ وضع الوصول
+</button>
 
-</body>
-
+<script src="voice.js"></script>
+    </body>
 </html>
