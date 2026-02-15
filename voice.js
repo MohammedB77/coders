@@ -1,12 +1,7 @@
-/* =========================
-   حالة وضع الوصول
-========================= */
+
 let a11yEnabled = localStorage.getItem("a11y") === "true";
 
 
-/* =========================
-   دالة النطق الأساسية
-========================= */
 function speak(text) {
   if (!text || !a11yEnabled) return;
 
@@ -15,7 +10,7 @@ function speak(text) {
   const u = new SpeechSynthesisUtterance(text);
   u.lang = "ar-SA";
 
-  u.rate = 1.8;
+  u.rate = 1.1;
 
   speechSynthesis.speak(u);
 }
@@ -324,4 +319,5 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
 
