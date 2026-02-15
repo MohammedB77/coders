@@ -40,7 +40,7 @@ toggleBtn?.addEventListener("click", () => {
 
   const u = new SpeechSynthesisUtterance(msg);
   u.lang = "ar-SA";
-  u.rate = 1.8;
+  u.rate = 1.1;
   speechSynthesis.speak(u);
 });
 
@@ -319,5 +319,6 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
 
 
