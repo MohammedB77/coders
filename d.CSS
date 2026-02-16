@@ -643,16 +643,18 @@ a {
     color: #A17FFF;
     font-weight: 700;
 }
+.main-tools-image {
+    width: 100%;       
+    max-width: 800px;   
+height: auto;   
+    display: block;
+    margin: 20px auto;
+}
 .tools-image-section {
     text-align: center;
     margin-bottom: 50px;
-}
-.main-tools-image {
-    width: 800px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    max-width: 90%;
+    width: 100%;
+    overflow: hidden; 
 }
 .extra-subscriptions-section {
     padding: 0 20px;
@@ -1201,3 +1203,4 @@ overflow-x: hidden;
 .a11y-toggle .icon {
   font-size: 18px;
 }
+
