@@ -991,9 +991,6 @@ height: auto;
     color: #5a5a5a;
     line-height: 1.8;
 }
-
-
-
 @media (max-width: 1000px) {
     .top-bar {
         position: fixed;
@@ -1007,32 +1004,36 @@ height: auto;
         z-index: 9999; 
         display: flex;
         align-items: center;
-        justify-content: space-around; 
+        justify-content: space-between; 
         height: 70px;
-        padding: 0 20px;
-        overflow: hidden; 
-        white-space: nowrap;
+        padding: 0 15px; 
+        box-sizing: border-box; 
     }
+
     .top-bar nav {
-        display: inline-block; 
-        margin-right: 20px;
-        position: static; 
-        transform: none;
-        height: auto;
+        display: flex;
+        align-items: center;
     }
+
     .top-bar nav ul {
         display: flex; 
         flex-direction: row; 
-        gap: 20px;
+        gap: 15px; /* تقليل الفجوة قليلاً لتناسب شاشات الجوال */
         padding: 0;
+        margin: 0;
+        list-style: none;
     }
+
     .top-bar nav ul li a {
-        font-size: 16px; 
+        font-size: 14px; /* تصغير الخط قليلاً ليناسب العرض */
+        text-decoration: none;
+        white-space: nowrap; /* مسموح بها هنا فقط لمنع انكسار النص داخل الرابط */
     }
+
     .top-bar .logo-text {
-        flex-shrink: 0; 
-        margin-left: 20px;
+        font-weight: bold;
     }
+
     .menu-toggle {
         display: none; 
     }
@@ -1197,6 +1198,7 @@ height: auto;
 .a11y-toggle .icon {
   font-size: 18px;
 }
+
 
 
 
