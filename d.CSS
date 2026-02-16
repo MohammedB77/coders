@@ -995,8 +995,7 @@ height: auto;
 
 
 @media (max-width: 1000px) {
-    
-  .top-bar {
+    .top-bar {
         position: fixed;
         top: 0;
         left: 0;
@@ -1037,7 +1036,6 @@ height: auto;
     .menu-toggle {
         display: none; 
     }
-
     .main-content {
         flex-direction: column;
         height: auto;
@@ -1199,5 +1197,6 @@ height: auto;
 .a11y-toggle .icon {
   font-size: 18px;
 }
+
 
 
