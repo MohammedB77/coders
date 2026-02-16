@@ -23,19 +23,18 @@
 </head>
 <body>
 
-<!-- الهيدر -->
 <header class="top-bar">
     <nav aria-label="التنقل الرئيسي">
         <ul>
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="studyplan.html">الخطة الدراسية</a></li>
+            <li><a href="index.html" id ="home">الرئيسية</a></li>
+            <li><a href="studyplan.html" id="studyplan">الخطة الدراسية</a></li>
+             <li><a href="courses.html" id = "roadmap" >دليل علوم الحاسب</a></li>
             <li><a href="StudentResources.html" class="active-link" aria-current="page">أدوات الطالب</a></li>
-            <li><a href="certificates.html">الشهادات المهنية</a></li>
+            <li><a href="certificates.html" id = "certificates">الشهادات المهنية</a></li>
         </ul>
     </nav>
 </header>
 
-<!-- المحتوى الرئيسي -->
 <main class="student-tools-page-container" aria-labelledby="tools-main-title">
 
     <!-- عنوان الصفحة -->
@@ -51,10 +50,10 @@
         </p>
     </div>
 
-   </div>
-        <section class="tools-image-section">
-            <img src="LandingBage\Group255.png" alt="تصميم الأدوات الرئيسية" class="main-tools-image">
-        </section>
+    <!-- صورة الأدوات -->
+    <section class="tools-image-section" aria-label="صورة توضيحية للأدوات المتاحة للطلاب">
+        <img src="LandingBage\Group255.png" alt="تصميم يوضح أهم الأدوات الرقمية المتاحة للطلاب" class="main-tools-image">
+    </section>
 
     <!-- الاشتراكات -->
     <section class="extra-subscriptions-section" aria-labelledby="subscriptions-title">
@@ -208,11 +207,9 @@
 <button class="a11y-toggle"
         aria-pressed="false"
         aria-label="تفعيل أو إيقاف وضع الاحتياجات الخاصة">
-  ♿ وضع الوصول
+  وضع الوصول
 </button>
 
 <script src="voice.js"></script>
 </body>
 </html>
-
-
