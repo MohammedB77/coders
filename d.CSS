@@ -1,5 +1,4 @@
-/* General Styles */
-/* الخط الأساسي للموقع */
+
 body {
   font-family: 'IBM Plex Sans Arabic', sans-serif;
   font-weight: 400;
@@ -7,7 +6,6 @@ body {
   color: #1f1f1f;
 }
 
-/* العناوين الرئيسية */
 h1 {
   font-size: 2.3rem;
   font-weight: 700;
@@ -26,7 +24,7 @@ h3 {
   line-height: 1.6;
 }
 
-/* النصوص العادية */
+
 p,
 span,
 li {
@@ -34,7 +32,7 @@ li {
   font-weight: 400;
 }
 
-/* الروابط والأزرار */
+
 a,
 button {
   font-family: 'IBM Plex Sans Arabic', sans-serif;
@@ -998,25 +996,23 @@ height: auto;
 
 @media (max-width: 1000px) {
     
-    .top-bar {
- position: fixed;
-    top: 0;
-    width: 100%;
-    
-    background-color: rgba(255, 255, 255, 0.85); 
-    backdrop-filter: blur(10px); 
-    
-    box-shadow: 0 1px 15px rgba(0,0,0,0.05);
-    z-index: 1000;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: space-around; 
-    height: 70px;
-    padding: 0 40px;
-overflow-x: hidden; 
-    white-space: nowrap;
-    white-space: nowrap;
+  .top-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.95); 
+        backdrop-filter: blur(10px); 
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        z-index: 9999; 
+        display: flex;
+        align-items: center;
+        justify-content: space-around; 
+        height: 70px;
+        padding: 0 20px;
+        overflow: hidden; 
+        white-space: nowrap;
     }
     .top-bar nav {
         display: inline-block; 
@@ -1203,4 +1199,5 @@ overflow-x: hidden;
 .a11y-toggle .icon {
   font-size: 18px;
 }
+
 
